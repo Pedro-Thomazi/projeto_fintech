@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript -->
+  <script src="js/script.js" defer></script>
+  <title>Fintech</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menuHamb">
+      <div class="hamb">
+        <label class="line1"></label>
+        <label class="line2"></label>
+        <label class="line3"></label>
+      </div>
+    </nav>
+
+    <div class="userContainer">
+      <i class="bi bi-person"></i>
+    </div>
+  </header>
+
+  <main class="p-2 container main">
+    <h1>Minhas Finanças</h1>
+
+    <section class="myBalance">
+      <article>
+        <p>Meu saldo</p>
+        <h2 class="balance"><span class="money">R$10.000,00</span> <i class="bi bi-eye-slash-fill"></i></h2>
+        <button class="btnAction hiddenBalance">Esconder saldo</button>
+        <button class="btnAction showBalance">Mostrar saldo</button>
+      </article>
+      <div class="buttons">
+        <input type="radio" name="buttons" id="first" checked>
+        <input type="radio" name="buttons" id="second">
+        <input type="radio" name="buttons" id="third">
+
+        <label for="first"></label>
+        <label for="second"></label>
+        <label for="third"></label>
+      </div>
+    </section>
+
+    <span class="division"></span>
+
+    <section class="myLastMonths">
+      <p>Últimos meses</p>
+
+      <article class="redBalance">
+        <div>
+          <p class="text">Saldo: </p>
+          <p>R$-150,00</p>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+        <footer> 1 de Agosto - 1 de Setembro</footer>
+      </article>
+      <article class="greenBalance">
+        <div>
+          <p class="text">Saldo: </p>
+          <p>R$150,00</p>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+        <footer>1 de Setembro - 1 de Outubro</footer>
+      </article>
+      <article class="greenBalance">
+        <div>
+          <p class="text">Saldo: </p>
+          <p>R$530,00</p>
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+        <footer>1 de Outubro - 1 de Novembro</footer>
+      </article>
+    </section>
+
+    <section class="container p-2 actions">
+      <article>
+        <div class="option">
+          <i class="bi bi-graph-up-arrow"></i>
+          <span>Investir</span>
+        </div>
+        <div class="option">
+          <i class="bi bi-gear-fill"></i>
+          <span>Configurações</span>
+        </div>
+        <div class="option">
+          <i class="bi bi-clock-history"></i>
+          <span>Histórico</span>
+        </div>
+        <div class="option">
+          <i class="bi bi-piggy-bank-fill"></i>
+          <span>Finanças</span>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

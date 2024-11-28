@@ -1,0 +1,230 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .menuHamb .hamb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  /* background-color: red; */
+}
+
+.header .menuHamb .hamb label {
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #888;
+  transition: .5s;
+}
+
+.header .menuHamb .hamb label.line1 {
+  width: 50%;
+}
+
+.header .menuHamb .hamb label.line2 {
+  width: 70%;
+}
+
+.header .menuHamb .hamb label.line3 {
+  width: 100%;
+}
+
+.header .menuHamb .hamb:hover label {
+  width: 100%;
+}
+
+.header .userContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  /* background-color: red; */
+}
+
+
+.header .userContainer i {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #999;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* MAIN */
+/* .main {
+  background-color: red;
+} */
+
+.main h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.main .myBalance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main .myBalance article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 100%;
+  background-color: #3984A4;
+}
+
+.main .myBalance article p {
+  background-color: #6D909F;
+  width: 100px;
+  padding: 5px;
+  color: #eee;
+}
+
+.main .myBalance article .balance {
+  color: #eee;
+  font-size: 2rem;
+}
+
+.main .myBalance article .balance i {
+  display: none;
+}
+
+.main .myBalance article .btnAction {
+  background-color: #9A39A3;
+  color: #eee;
+  border: none;
+  width: 140px;
+  padding: 5px;
+  align-self: flex-end;
+}
+
+.main .myBalance article .showBalance {
+  display: none;
+}
+
+.main .buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main .buttons label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #808080;
+}
+
+.main .buttons input {
+  display: none;
+}
+
+.main .buttons input#first:checked~label[for="first"] {
+  background-color: #222;
+}
+
+.main .buttons input#second:checked~label[for="second"] {
+  background-color: #222;
+}
+
+.main .buttons input#third:checked~label[for="third"] {
+  background-color: #222;
+}
+
+/* Divisão */
+.main .division {
+  display: block;
+  background-color: #808080;
+  width: 100%;
+  height: 3px;
+  margin: 25px 0;
+}
+
+/* Últimos meses */
+.main .myLastMonths {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .myLastMonths article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.main .myLastMonths article div {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .myLastMonths article div p.text {
+  flex-grow: 1;
+}
+
+.main .myLastMonths article footer {
+  color: #eee;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.main .myLastMonths article.redBalance {
+  background-color: #E89A9A;
+}
+
+.main .myLastMonths article.redBalance div {
+  color: #6A1010;
+}
+
+.main .myLastMonths article.redBalance footer {
+  background-color: #6A1010;
+}
+
+.main .myLastMonths article.greenBalance {
+  background-color: #90FC86;
+}
+
+.main .myLastMonths article.greenBalance div {
+  color: #0D5606;
+}
+
+.main .myLastMonths article.greenBalance footer {
+  background-color: #0D5606;
+}
+
+
+/* Ações do usuário */
+.main .actions article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  /* background-color: red; */
+}
+
+.main .actions article .option {
+  background-color: #70BBF8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  font-size: 1.4rem;
+  width: 49%;
+}
